@@ -18,9 +18,9 @@ from datetime import datetime # To get current date for fixtures
 #    MLS_API_KEY = "YOUR_ACTUAL_API_KEY_HERE"
 
 try:
-    API_KEY = st.secrets["ba48316d0bc6c7d57e7415942bcb70b0"]["mls_key"]
+    API_KEY = st.secrets["ba48316d0bc6c7d57e7415942bcb70b0"]
 except (AttributeError, KeyError):
-    API_KEY = os.getenv("MLS_API_KEY", "Key_Error")
+    API_KEY = os.getenv("MLS_API_KEY")
 
 # API-Sports Football API details
 # The base URL for API-Sports Football API is typically this.
