@@ -19,9 +19,9 @@ import os # For environment variables (good practice for API keys)
 # Replace with the actual base URL of your chosen MLS API
 # This is a placeholder. For example, it might be something like:
 # "https://api.sportmonks.com/v3/football/" or "https://api-sports.io/football/v3/"
-MLS_API_BASE_URL = "https://api.example.com/mls/" # REPLACE THIS!
+MLS_API_BASE_URL = "https://api-football-v1.p.rapidapi.com/v2/leagues/league/{253}" # REPLACE THIS!
 MLS_API_ENDPOINT = "fixtures" # REPLACE THIS with the endpoint for live matches/fixtures
-MLS_LEAGUE_ID = "1234" # REPLACE THIS with the actual League ID for MLS from your chosen API
+MLS_LEAGUE_ID = "253" # REPLACE THIS with the actual League ID for MLS from your chosen API
 # You'll likely need to consult the API documentation for correct IDs and endpoints.
 
 # Get API key from Streamlit secrets or environment variable
