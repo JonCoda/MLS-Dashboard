@@ -94,15 +94,6 @@ score_placeholder = st.empty()
 while True:
     with score_placeholder.container():
         st.header("Today's MLS Matches")
-        
-        if not scores_df.empty:
-            for _, row in scores_df.iterrows():
-                col1, col2, col3 = st.columns([2, 1, 2])
-                with col1: st.markdown(f"**{row['home_team']}**")
-                with col2: st.markdown(f"**{row['home_score']} - {row['away_score']}**")
-                with col3: st.markdown(f"**{row['away_team']}**")
-                st.write(f"<small>{row['status']}</small>", unsafe_allow_html=True)
-                st.write("---")
         else:
             st.info("No MLS matches found for today, or an error occurred.")
 
