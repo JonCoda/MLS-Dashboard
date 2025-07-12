@@ -22,8 +22,6 @@ def get_mls_scores():
     Fetches MLS match scores from API-Sports Football API for today.
     """
     headers = {"x-apisports-key": API_KEY}
-    params = {
-        "season": CURRENT_SEASON,
     }
 
     try:
@@ -97,8 +95,6 @@ score_placeholder = st.empty()
 while True:
     with score_placeholder.container():
         st.header("Today's MLS Matches")
-        
-        scores_df = get_mls_scores()
         
         if not scores_df.empty:
             for _, row in scores_df.iterrows():
