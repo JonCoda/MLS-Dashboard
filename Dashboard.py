@@ -22,7 +22,6 @@ def get_mls_scores():
     Fetches MLS match scores from API-Sports Football API for today.
     """
     headers = {"x-apisports-key": API_KEY}
-    }
 
     try:
         response = requests.get(f"{API_BASE_URL}{FIXTURES_ENDPOINT}", headers=headers, params=params, timeout=10)
