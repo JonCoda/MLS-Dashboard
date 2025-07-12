@@ -30,7 +30,6 @@ def get_mls_scores_from_api():
         # Define parameters for the API request
         # You'll need to check your API's documentation for the correct parameter names
         params = {
-            "api_token": 'ba48316d0bc6c7d57e7415942bcb70b0',  # Common, but check your API's method (header, query param)
             "league": MLS_LEAGUE_IDENTIFIER, # How your API identifies MLS
             # Add other necessary parameters like 'date', 'status', etc.
             # Example: "date": time.strftime("%Y-%m-%d") for today's matches
