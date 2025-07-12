@@ -94,8 +94,8 @@ score_placeholder = st.empty()
 while True:
     with score_placeholder.container():
         st.header("Today's MLS Matches")
-        else:
-            st.info("No MLS matches found for today, or an error occurred.")
+else:
+        st.info("No MLS matches found for today, or an error occurred.")
 
         st.info(f"Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S EDT')}")
         
