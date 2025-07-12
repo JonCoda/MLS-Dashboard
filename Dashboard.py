@@ -96,7 +96,3 @@ while True:
         st.header("Today's MLS Matches")
 else:
     st.info("No MLS matches found for today, or an error occurred.")
-
-        st.info(f"Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S EDT')}")
-        
-    time.sleep(60) # Refresh every 60 seconds
