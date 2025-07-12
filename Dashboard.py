@@ -17,7 +17,7 @@ import os # For securely getting API key
 #    MLS_API_KEY = "YOUR_ACTUAL_API_KEY_HERE"
 
 # These will come from your chosen API's documentation
-API_BASE_URL = "ba48316d0bc6c7d57e7415942bcb70b0" # e.g., "https://api.sportmonks.com/v3/football/"
+API_BASE_URL = "http://api-sports.b-cdn.net" # e.g., "https://api.sportmonks.com/v3/football/"
 MLS_LEAGUE_IDENTIFIER = "253" # e.g., "1234" or "MLS"
 
 # --- Function to fetch live MLS scores from the API ---
@@ -37,7 +37,7 @@ def get_mls_scores_from_api():
         }
 
         # Construct the full API URL
-        full_api_url = f"{API_BASE_URL}"
+        full_api_url = f"{ba48316d0bc6c7d57e7415942bcb70b0}"
 
         # Make the GET request to the API
         response = requests.get(full_api_url, params=params, timeout=15)
