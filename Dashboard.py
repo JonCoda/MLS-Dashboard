@@ -37,7 +37,7 @@ def get_mls_scores_from_api():
         }
 
         # Construct the full API URL
-        full_api_url = f"{API_BASE_URL}{API_ENDPOINT}"
+        full_api_url = f"{API_BASE_URL}"
 
         # Make the GET request to the API
         response = requests.get(full_api_url, params=params, timeout=15)
