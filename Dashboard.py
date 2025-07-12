@@ -27,8 +27,7 @@ def get_mls_scores():
     params = {
         "league": MLS_LEAGUE_ID,
         "season": CURRENT_SEASON,
-        "date": datetime.now().strftime("%Y-%m-%d"),
-        "timezone": "America/New_York"
+        "date": datetime.now().strftime("%Y-%m-%d")
     }
 
     try:
