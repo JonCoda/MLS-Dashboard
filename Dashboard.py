@@ -28,7 +28,7 @@ except (AttributeError, KeyError):
 API_BASE_URL = "https://v3.football.api-sports.io/"
 FIXTURES_ENDPOINT = "fixtures"
 MLS_LEAGUE_ID = 253 # API-Sports ID for Major League Soccer
-CURRENT_SEASON = datetime.now().year # Get the current year for the season
+CURRENT_SEASON = 2025.now().year # Get the current year for the season
 
 # --- Function to fetch MLS scores from API-Sports Football API ---
 def get_mls_scores_from_api_sports():
