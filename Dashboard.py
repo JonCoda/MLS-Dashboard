@@ -23,9 +23,7 @@ def get_mls_scores():
     """
     headers = {"x-apisports-key": API_KEY}
     params = {
-        "league": MLS_LEAGUE_ID,
         "season": CURRENT_SEASON,
-        "date": datetime.now().strftime("%Y-%m-%d")
     }
 
     try:
